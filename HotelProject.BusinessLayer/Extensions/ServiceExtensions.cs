@@ -14,6 +14,7 @@ namespace HotelProject.BusinessLayer.Extensions
 	{
 		public static IServiceCollection LoadServiceLayerExtension(this IServiceCollection services)
 		{
+
 			services.AddScoped<IRoomService, RoomManager>();
 			services.AddScoped<IStaffService, StaffManager>();
 			services.AddScoped<ITestimonialService, TestimonialManager>();

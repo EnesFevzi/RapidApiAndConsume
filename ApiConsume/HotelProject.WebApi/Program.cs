@@ -17,6 +17,15 @@ builder.Services.LoadServiceLayerExtension();
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddSession();
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("OtelApiCors", opts =>
+    {
+        opts.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 //builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 var app = builder.Build();
@@ -27,9 +36,9 @@ if (app.Environment.IsDevelopment())
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
-
+app.UseRouting();
 app.UseHttpsRedirection();
-
+app.UseCors("OtelApiCors");
 app.UseAuthorization();
 
 app.MapControllers();

@@ -14,7 +14,9 @@ namespace HotelProject.DataAccessLayer.Extensions
 	{
 		public static IServiceCollection LoadDataLayerExtension(this IServiceCollection services)
 		{
-			services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+           
+
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 			services.AddScoped<IRoomRepository, EfRoomRepository>();
 			services.AddScoped<IStaffRepository, EfStaffRepository>();
 			services.AddScoped<ITestimonialRepository, EfTestimonialRepository>();
