@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.LoadDataLayerExtension();
 builder.Services.LoadServiceLayerExtension();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
