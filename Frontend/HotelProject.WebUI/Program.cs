@@ -19,14 +19,14 @@ builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 
-builder.Services.AddMvc(config =>
-{
-	var policy = new AuthorizationPolicyBuilder()
-	.RequireAuthenticatedUser()
-	.Build();
-	config.Filters.Add(new AuthorizeFilter(policy));
+//builder.Services.AddMvc(config =>
+//{
+//	var policy = new AuthorizationPolicyBuilder()
+//	.RequireAuthenticatedUser()
+//	.Build();
+//	config.Filters.Add(new AuthorizeFilter(policy));
 
-});
+//});
 //builder.Services.AddAuthentication(
 //                CookieAuthenticationDefaults.AuthenticationScheme)
 //                .AddCookie(x =>
