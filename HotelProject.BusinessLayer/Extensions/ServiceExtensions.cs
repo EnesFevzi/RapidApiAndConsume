@@ -20,6 +20,7 @@ namespace HotelProject.BusinessLayer.Extensions
 			services.AddScoped<ITestimonialService, TestimonialManager>();
 			services.AddScoped<IServiceService, ServiceManager>();
 			services.AddScoped<ISubscribeService, SubscribeManager>();
+			services.AddScoped<IAboutService, AboutManager>();
 			
 
 			return services;
