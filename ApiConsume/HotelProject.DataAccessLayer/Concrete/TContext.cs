@@ -13,7 +13,7 @@ namespace HotelProject.DataAccessLayer.Concrete
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=HotelProjectDB;integrated security=true");
+			optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=HotelProjectDB1;integrated security=true");
 			//optionsBuilder.UseSqlServer("server=DESKTOP-QMOGCM6; database=Test; integrated security=true;Encrypt=False;");
 			//"Data Source=DESKTOP-SM0VBLO;Initial Catalog =IsSureciDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
 
@@ -25,5 +25,7 @@ namespace HotelProject.DataAccessLayer.Concrete
 		public DbSet<Subscribe> Subscribes { get; set; }
 		public DbSet<Testimonial> Testimonials { get; set; }
 		public DbSet<About> Abouts { get; set; }
-	}
+		public DbSet<Booking> Bookings { get; set; }
+
+    }
 }
