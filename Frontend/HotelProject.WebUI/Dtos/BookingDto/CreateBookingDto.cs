@@ -4,7 +4,6 @@ namespace HotelProject.WebUI.Dtos.BookingDto
 {
     public class CreateBookingDto
     {
-        [Required(ErrorMessage = "Hizmet ikon linki giriniz")]
         public string Name { get; set; }
         public string Mail { get; set; }
         public DateTime Checkin { get; set; }

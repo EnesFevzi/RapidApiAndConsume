@@ -1,5 +1,7 @@
 
+using HotelProject.BusinessLayer.Extensions;
 using HotelProject.DataAccessLayer.Concrete;
+using HotelProject.DataAccessLayer.Extensions;
 using HotelProject.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -15,6 +17,8 @@ builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<TConte
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 builder.Services.AddAuthorization();
+builder.Services.LoadDataLayerExtension();
+builder.Services.LoadServiceLayerExtension();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 

@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.DataAccessLaye
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.WebUI", "Frontend\HotelProject.WebUI\HotelProject.WebUI.csproj", "{118EEF32-3E2B-4B94-B4D6-B330CD9B139F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.DtoLayer", "HotelProject.DtoLayer\HotelProject.DtoLayer.csproj", "{553FD9C7-5F86-427C-9FF7-3A31A6459798}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.DtoLayer", "HotelProject.DtoLayer\HotelProject.DtoLayer.csproj", "{553FD9C7-5F86-427C-9FF7-3A31A6459798}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.BusinessLayer", "HotelProject.BusinessLayer\HotelProject.BusinessLayer.csproj", "{E7428CC3-B0DB-498B-9702-E88F03857525}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.BusinessLayer", "HotelProject.BusinessLayer\HotelProject.BusinessLayer.csproj", "{E7428CC3-B0DB-498B-9702-E88F03857525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidApiConsume", "RapidApi\RapidApiConsume\RapidApiConsume.csproj", "{C51BCF19-9458-417A-8263-4F6FC0AC5545}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{E7428CC3-B0DB-498B-9702-E88F03857525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7428CC3-B0DB-498B-9702-E88F03857525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7428CC3-B0DB-498B-9702-E88F03857525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51BCF19-9458-417A-8263-4F6FC0AC5545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51BCF19-9458-417A-8263-4F6FC0AC5545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51BCF19-9458-417A-8263-4F6FC0AC5545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51BCF19-9458-417A-8263-4F6FC0AC5545}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{118EEF32-3E2B-4B94-B4D6-B330CD9B139F} = {8EBAD0A6-2D03-4A10-935C-0BE2C179AF51}
 		{553FD9C7-5F86-427C-9FF7-3A31A6459798} = {845F5E5F-ECA6-4462-B859-27F21CACF18E}
 		{E7428CC3-B0DB-498B-9702-E88F03857525} = {845F5E5F-ECA6-4462-B859-27F21CACF18E}
+		{C51BCF19-9458-417A-8263-4F6FC0AC5545} = {503FDE51-495B-40BA-86C3-416CD1158C20}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB747AB7-078B-4C43-99D9-F29E5CE73CB8}

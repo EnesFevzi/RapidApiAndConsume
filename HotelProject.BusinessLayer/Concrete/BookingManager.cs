@@ -23,9 +23,39 @@ namespace HotelProject.BusinessLayer.Concrete
             _bookingRepository.Add(t);
         }
 
+        public void TBookingStatusChangeApproved(Booking booking)
+        {
+            _bookingRepository.BookingStatusChangeApproved(booking);
+        }
+
+        public void TBookingStatusChangeApproved2(int id)
+        {
+            _bookingRepository.BookingStatusChangeApproved2(id);
+        }
+
+        public void TBookingStatusChangeApproved3(int id)
+        {
+            _bookingRepository.BookingStatusChangeApproved3(id);
+        }
+
+        public void TBookingStatusChangeCancel(int id)
+        {
+            _bookingRepository.BookingStatusChangeCancel(id);
+        }
+
+        public void TBookingStatusChangeWait(int id)
+        {
+            _bookingRepository.BookingStatusChangeWait(id);
+        }
+
         public void TDelete(Booking t)
         {
             _bookingRepository.Delete(t);
+        }
+
+        public int TGetBookingCount()
+        {
+            return _bookingRepository.GetBookingCount();
         }
 
         public Booking TGetByID(int id)
@@ -36,6 +66,11 @@ namespace HotelProject.BusinessLayer.Concrete
         public List<Booking> TGetList()
         {
             return _bookingRepository.GetList();
+        }
+
+        public List<Booking> TLast6Bookings()
+        {
+            throw new NotImplementedException();
         }
 
         public void TUpdate(Booking t)
