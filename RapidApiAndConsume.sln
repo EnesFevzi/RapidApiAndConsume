@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.DtoLayer", "Ho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.BusinessLayer", "HotelProject.BusinessLayer\HotelProject.BusinessLayer.csproj", "{E7428CC3-B0DB-498B-9702-E88F03857525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidApiConsume", "RapidApi\RapidApiConsume\RapidApiConsume.csproj", "{C51BCF19-9458-417A-8263-4F6FC0AC5545}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidApiConsume", "RapidApi\RapidApiConsume\RapidApiConsume.csproj", "{C51BCF19-9458-417A-8263-4F6FC0AC5545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiJwt", "JwtProject\WebApiJwt\WebApiJwt.csproj", "{3A0C6BAC-A44F-4C52-BFB5-D54E0D2B9878}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{C51BCF19-9458-417A-8263-4F6FC0AC5545}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C51BCF19-9458-417A-8263-4F6FC0AC5545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C51BCF19-9458-417A-8263-4F6FC0AC5545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0C6BAC-A44F-4C52-BFB5-D54E0D2B9878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0C6BAC-A44F-4C52-BFB5-D54E0D2B9878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0C6BAC-A44F-4C52-BFB5-D54E0D2B9878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0C6BAC-A44F-4C52-BFB5-D54E0D2B9878}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{553FD9C7-5F86-427C-9FF7-3A31A6459798} = {845F5E5F-ECA6-4462-B859-27F21CACF18E}
 		{E7428CC3-B0DB-498B-9702-E88F03857525} = {845F5E5F-ECA6-4462-B859-27F21CACF18E}
 		{C51BCF19-9458-417A-8263-4F6FC0AC5545} = {503FDE51-495B-40BA-86C3-416CD1158C20}
+		{3A0C6BAC-A44F-4C52-BFB5-D54E0D2B9878} = {18A5B961-6CE1-4134-9548-AD850E2CAA7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB747AB7-078B-4C43-99D9-F29E5CE73CB8}
