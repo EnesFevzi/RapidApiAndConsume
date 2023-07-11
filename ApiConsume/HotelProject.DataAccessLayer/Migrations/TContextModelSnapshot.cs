@@ -53,7 +53,7 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("AboutID");
 
-                    b.ToTable("Abouts");
+                    b.ToTable("Abouts", (string)null);
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.AppRole", b =>
@@ -227,7 +227,7 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("BookingID");
 
-                    b.ToTable("Bookings");
+                    b.ToTable("Bookings", (string)null);
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Guest", b =>
@@ -252,7 +252,7 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("GuestID");
 
-                    b.ToTable("Guests");
+                    b.ToTable("Guests", (string)null);
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Room", b =>
@@ -296,7 +296,7 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("RoomID");
 
-                    b.ToTable("Rooms");
+                    b.ToTable("Rooms", (string)null);
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Service", b =>
@@ -321,7 +321,7 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("ServiceID");
 
-                    b.ToTable("Services");
+                    b.ToTable("Services", (string)null);
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Staff", b =>
@@ -354,7 +354,7 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("StaffID");
 
-                    b.ToTable("Staffs");
+                    b.ToTable("Staffs", (string)null);
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Subscribe", b =>
@@ -371,7 +371,7 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("SubscribeID");
 
-                    b.ToTable("Subscribes");
+                    b.ToTable("Subscribes", (string)null);
                 });
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Testimonial", b =>
@@ -400,7 +400,7 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     b.HasKey("TestimonialID");
 
-                    b.ToTable("Testimonials");
+                    b.ToTable("Testimonials", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

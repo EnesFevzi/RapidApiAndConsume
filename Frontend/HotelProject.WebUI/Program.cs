@@ -1,8 +1,13 @@
 
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using HotelProject.BusinessLayer.Extensions;
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.Extensions;
 using HotelProject.EntityLayer.Concrete;
+using HotelProject.WebUI.Dtos.GuestDto;
+using HotelProject.WebUI.Extensions;
+using HotelProject.WebUI.ValidationRules.GuestValidationRules;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -14,11 +19,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<TContext>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<TContext>().AddDefaultTokenProviders();
-builder.Services.AddControllersWithViews();
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
 builder.Services.AddHttpClient();
 builder.Services.AddAuthorization();
 builder.Services.LoadDataLayerExtension();
 builder.Services.LoadServiceLayerExtension();
+builder.Services.LoadWebUILayerExtension();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 

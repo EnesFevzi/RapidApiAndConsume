@@ -1,4 +1,5 @@
 ﻿using HotelProject.BusinessLayer.Abstract;
+using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,29 +11,36 @@ namespace HotelProject.BusinessLayer.Concrete
 {
     public class ContactManager : IContactService
     {
+        private readonly IContactRepository _contactRepository;
+
+        public ContactManager(IContactRepository contactRepository)
+        {
+            _contactRepository = contactRepository;
+        }
+
         public void TAdd(Contact t)
         {
-            throw new NotImplementedException();
+            _contactRepository.Add(t);
         }
 
         public void TDelete(Contact t)
         {
-            throw new NotImplementedException();
+           _contactRepository.Delete(t);
         }
 
         public Contact TGetByID(int id)
         {
-            throw new NotImplementedException();
+            return _contactRepository.GetByID(id);  
         }
 
         public List<Contact> TGetList()
         {
-            throw new NotImplementedException();
+           return _contactRepository.GetList();
         }
 
         public void TUpdate(Contact t)
         {
-            throw new NotImplementedException();
+            _contactRepository.Update(t);
         }
     }
 }
