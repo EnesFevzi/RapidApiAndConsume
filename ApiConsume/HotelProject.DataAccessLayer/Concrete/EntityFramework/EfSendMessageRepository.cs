@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 
 namespace HotelProject.DataAccessLayer.Concrete.EntityFramework
 {
-    public class EfContactRepository : GenericRepository<Contact>, IContactRepository
+    internal class EfSendMessageRepository : GenericRepository<SendMessage>, ISendMessageRepository
     {
-        public EfContactRepository(TContext context) : base(context)
+        public EfSendMessageRepository(TContext context) : base(context)
         {
-        }
 
-        public int GetContactCount()
-        {
-            var context = new TContext();
-            return context.Contacts.Count();
         }
+        //public int GetSendMessageCount()
+        //{
+        //    var context = new TContext();
+        //    return context.SendMessages.Count();
+        //}
     }
 }

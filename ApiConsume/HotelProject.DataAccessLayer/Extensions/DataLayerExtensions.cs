@@ -26,6 +26,7 @@ namespace HotelProject.DataAccessLayer.Extensions
 			services.AddScoped<IBookingRepository, EfBookingRepository>();
 			services.AddScoped<IContactRepository, EfContactRepository>();
 			services.AddScoped<IGuestRepository, EfGuestRepository>();
+			services.AddScoped<ISendMessageRepository, EfSendMessageRepository>();
 			return services;
 
 
