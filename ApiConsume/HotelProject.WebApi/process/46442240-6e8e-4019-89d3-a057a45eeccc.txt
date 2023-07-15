@@ -1,0 +1,40 @@
+--Update Abouts Set RoomCount=(Select Count(*) From Rooms),
+--StaffCount=(Select Count(*) From Staffs),
+--CustomerCount=(Select Count(*) From Guests)
+--Select * From Abouts
+
+--Create Trigger RoomDecrease
+--On Rooms
+--After Delete
+--As
+--Update Abouts Set RoomCount=RoomCount-1
+
+--Create Trigger Roomİncrease
+--On Rooms
+--After Insert
+--As
+--Update Abouts Set RoomCount=RoomCount+1
+
+--Create Trigger Staffincrease
+--On Staffs
+--After Insert
+--As
+--Update Abouts Set StaffCount=StaffCount+1
+
+--Create Trigger StaffDecrease
+--On Staffs
+--After Delete
+--As
+--Update Abouts Set StaffCount=StaffCount-1
+
+--Create Trigger GuestDecrease
+--On Guests
+--After Delete
+--As
+--Update Abouts Set StaffCount=StaffCount-1
+
+--Create Trigger Guestİncrease
+--On Staffs
+--After Insert
+--As
+--Update Abouts Set StaffCount=StaffCount+1

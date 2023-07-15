@@ -37,8 +37,9 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 //	.RequireAuthenticatedUser()
 //	.Build();
 //	config.Filters.Add(new AuthorizeFilter(policy));
-
 //});
+
+
 //builder.Services.AddAuthentication(
 //                CookieAuthenticationDefaults.AuthenticationScheme)
 //                .AddCookie(x =>
@@ -79,6 +80,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseAuthentication();
 app.UseRouting();
 app.UseAuthorization();
 

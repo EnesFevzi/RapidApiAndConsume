@@ -15,10 +15,10 @@ namespace HotelProject.DataAccessLayer.Concrete.EntityFramework
         {
 
         }
-        //public int GetSendMessageCount()
-        //{
-        //    var context = new TContext();
-        //    return context.SendMessages.Count();
-        //}
+        public int GetSendMessageCount()
+        {
+            var context = new TContext();
+            return context.SendMessages.Count();
+        }
     }
 }
