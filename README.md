@@ -46,3 +46,10 @@ Hotel Rezervasyon Projesi, ASP.NET Core 6.0 ve Entity Framework Core kullanılar
 5. Projeyi çalıştırın ve web uygulamasını tarayıcınızda görüntüleyin.
 
 
+## RapidAPI ve ApiConsume, API (Application Programming Interface) hizmetlerini kullanmayı kolaylaştıran araçlardır.
+
+RapidAPI, farklı hizmet sağlayıcıların sunduğu API'leri tek bir yerden erişilebilir hale getiren bir platformdur. Bu platform, geliştiricilere geniş bir API koleksiyonuna erişme imkanı sağlar. RapidAPI üzerinden çeşitli kategorilerdeki API'lere erişebilir, bu API'lerin belgelerini ve kullanım kılavuzlarını inceleyebilir ve projelerinizde bu API'leri kullanabilirsiniz. RapidAPI'nin sunduğu avantajlardan biri, API'lere erişmek ve entegrasyonlarınızı yönetmek için tek bir arayüz sağlamasıdır. Böylece farklı API'ler için ayrı ayrı hesaplar oluşturmanıza gerek kalmaz.
+
+ApiConsume ise, kendi API'lerinizi oluşturmanıza ve yönetmenize olanak tanıyan bir araçtır. Bu araç sayesinde, projenizde ihtiyaç duyduğunuz özel veri kaynaklarına erişmek için özelleştirilmiş API'ler oluşturabilirsiniz. ApiConsume, API endpointlerini tanımlamanıza, giriş parametrelerini ayarlamanıza ve API'den gelen verilere erişmenizi sağlar. Böylece API'lerinizi projenizin geri kalanıyla entegre edebilir ve verileri daha etkili bir şekilde kullanabilirsiniz.
+
+Her iki araç da geliştiricilerin API'leri kolayca kullanmasına ve projelerinde veri entegrasyonunu sağlamasına yardımcı olur. RapidAPI, farklı hizmet sağlayıcıların API'lerine erişimi kolaylaştırırken, ApiConsume kendi API'lerinizi oluşturmanızı ve yönetmenizi sağlar.
