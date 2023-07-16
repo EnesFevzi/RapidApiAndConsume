@@ -5,7 +5,8 @@ Hotel Reservation Website
 ![image](https://github.com/EnesFevzi/RapidApiAndConsume/assets/118919666/0f73e689-5544-4597-91dd-42b0f5444357)
 
 
-![image](https://github.com/EnesFevzi/RapidApiAndConsume/assets/118919666/44bfd1d3-bc14-45b1-9353-4472851bbd62)
+![image](https://github.com/EnesFevzi/RapidApiAndConsume/assets/118919666/536f9c5a-1ef4-42be-b5a8-d22c1f40d215)
+
 
 
 ![image](https://github.com/EnesFevzi/RapidApiAndConsume/assets/118919666/9e0c5f06-a316-4387-9445-9173e32e1630)
