@@ -14,5 +14,11 @@ namespace HotelProject.DataAccessLayer.Concrete.EntityFramework
 		public EfRoomRepository(TContext context) : base(context)
 		{
 		}
-	}
+
+        public int RoomCount()
+        {
+           var context = new TContext();
+            return  context.Rooms.Count();
+        }
+    }
 }

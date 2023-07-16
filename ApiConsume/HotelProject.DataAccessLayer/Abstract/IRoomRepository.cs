@@ -9,5 +9,6 @@ namespace HotelProject.DataAccessLayer.Abstract
 {
 	public interface IRoomRepository:IGenericRepository<Room>
 	{
+		public int RoomCount();
 	}
 }

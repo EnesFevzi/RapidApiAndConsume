@@ -70,7 +70,7 @@ namespace HotelProject.BusinessLayer.Concrete
 
         public List<Booking> TLast6Bookings()
         {
-            throw new NotImplementedException();
+           return _bookingRepository.Last6Bookings();
         }
 
         public void TUpdate(Booking t)

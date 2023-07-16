@@ -10,5 +10,7 @@ namespace HotelProject.DataAccessLayer.Abstract
     public interface IAppUserRepository:IGenericRepository<AppUser>
     {
         List<AppUser> UserListWithWorkLocation();
+        List<AppUser> UsersListWithWorkLocations();
+        public int AppUserCount();
     }
 }

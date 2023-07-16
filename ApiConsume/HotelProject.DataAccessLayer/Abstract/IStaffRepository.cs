@@ -9,5 +9,9 @@ namespace HotelProject.DataAccessLayer.Abstract
 {
 	public interface IStaffRepository:IGenericRepository<Staff>
 	{
-	}
+		public int GetStaffCount();
+        List<Staff> Last4Staff();
+
+
+    }
 }

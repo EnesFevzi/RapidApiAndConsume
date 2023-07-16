@@ -38,7 +38,18 @@ namespace HotelProject.BusinessLayer.Concrete
 			return _staffRepository.GetList();
 		}
 
-		public void TUpdate(Staff t)
+        public int TGetStaffCount()
+        {
+            return _staffRepository.GetStaffCount();
+        }
+
+        public List<Staff> TLast4Staff()
+        {
+			return _staffRepository.Last4Staff();
+				
+        }
+
+        public void TUpdate(Staff t)
 		{
 			_staffRepository.Update(t);
 		}

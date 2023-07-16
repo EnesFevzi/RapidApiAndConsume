@@ -23,6 +23,11 @@ namespace HotelProject.BusinessLayer.Concrete
             _appUserRepository.Add(t);
         }
 
+        public int TAppUserCount()
+        {
+           return _appUserRepository.AppUserCount();
+        }
+
         public void TDelete(AppUser t)
         {
             _appUserRepository.Delete(t);
@@ -46,6 +51,11 @@ namespace HotelProject.BusinessLayer.Concrete
         public List<AppUser> TUserListWithWorkLocation()
         {
             return _appUserRepository.UserListWithWorkLocation();
+        }
+
+        public List<AppUser> TUsersListWithWorkLocations()
+        {
+           return _appUserRepository.UsersListWithWorkLocations();
         }
     }
 }

@@ -7572,6 +7572,7 @@ sub {
 
 @media (max-width: 767.98px) {
   [data-sidebar-style="overlay"] .nav-header .logo-abbr {
+
     display: block; } }
 
 [data-header-position="fixed"] .nav-header {
@@ -7590,10 +7591,16 @@ sub {
   background: #111B27;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   transition: all .2s ease; }
-  .nav-header .logo-abbr {
-    display: none; }
+    .nav-header .logo-abbr {
+        max-width: 200px;
+    }
   .nav-header .logo-compact {
-    display: none; }
+   max-width: 200px; /* Örnekte 200 piksel olarak ayarlanmış, istediğiniz boyuta uygun olarak değiştirebilirsiniz */
+    height: auto;
+.nav-header  .brand-title {
+    max-width: 200px; /* Örnekte 200 piksel olarak ayarlanmış, istediğiniz boyuta uygun olarak değiştirebilirsiniz */
+    height: auto;
+}
   @media only screen and (min-width: 1200px) and (max-width: 1350px) {
     .nav-header {
       width: 14.375rem; } }

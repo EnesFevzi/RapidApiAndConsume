@@ -1,0 +1,26 @@
+﻿<li class="icons dropdown">
+    <div class="user-img c-pointer position-relative" data-toggle="dropdown">
+        <img src="@ViewBag.Values" height="40" width="40" alt="">
+        <span class="text-secondary text-small">
+            <b>@ViewBag.Role</b>
+        </span>
+        <span class="activity active"></span>
+    </div>
+    <div class="drop-down dropdown-profile dropdown-menu">
+        <div class="dropdown-content-body">
+            <ul>
+                <li>
+                    <a href="/Settings/Index/"><i class="icon-user"></i> <span>Profil</span></a>
+                </li>
+                <li>
+                    <a href="/AdminContact/Inbox/"><i class="icon-envelope-open"></i> <span>Gelen Kutusu</span> <div class="badge gradient-3 badge-pill badge-primary"></div></a>
+                </li>
+                <hr class="my-2">
+                <li>
+                    <a href="/Default/Index/"><i class="icon-lock"></i> <span>Ana Sayfa</span></a>
+                </li>
+                <li><a href="/Login/SignOut/"><i class="icon-key"></i> <span>Çıkış Yap</span></a></li>
+            </ul>
+        </div>
+    </div>
+</li>

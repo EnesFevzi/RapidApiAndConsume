@@ -38,7 +38,12 @@ namespace HotelProject.BusinessLayer.Concrete
 			return _roomRepository.GetList();
 		}
 
-		public void TUpdate(Room t)
+        public int TRoomCount()
+        {
+            return _roomRepository.RoomCount();
+        }
+
+        public void TUpdate(Room t)
 		{
 			_roomRepository.Update(t);
 		}

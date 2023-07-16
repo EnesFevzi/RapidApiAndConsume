@@ -1,0 +1,31 @@
+﻿@using HotelProject.EntityLayer.Concrete
+@model List<Contact>
+
+<div class="drop-down animated fadeIn dropdown-menu">
+    <div class="dropdown-content-heading d-flex justify-content-between">
+        <span class="">Mesajlar</span>
+
+    </div>
+    <div class="dropdown-content-body">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li class="notification-unread">
+                    <a href="javascript:void()">
+                        <img class="float-left mr-3 avatar-img" src="~/adminweb/images/user/form-user.png" alt="">
+                        <div class="notification-content">
+                            <div class="notification-heading">@item.Name</div>
+                            <div class="notification-timestamp">@item.Date.ToShortDateString()</div>
+                            <div class="notification-text">@item.Message</div>
+                        </div>
+                    </a>
+                </li>
+
+            }
+
+
+
+        </ul>
+
+    </div>
+</div>

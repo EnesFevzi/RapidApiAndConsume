@@ -31,22 +31,22 @@ builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 
-//builder.Services.AddMvc(config =>
-//{
-//	var policy = new AuthorizationPolicyBuilder()
-//	.RequireAuthenticatedUser()
-//	.Build();
-//	config.Filters.Add(new AuthorizeFilter(policy));
-//});
+builder.Services.AddMvc(config =>
+{
+	var policy = new AuthorizationPolicyBuilder()
+	.RequireAuthenticatedUser()
+	.Build();
+	config.Filters.Add(new AuthorizeFilter(policy));
+});
 
 
-//builder.Services.AddAuthentication(
-//                CookieAuthenticationDefaults.AuthenticationScheme)
-//                .AddCookie(x =>
-//                {
-//                    x.LoginPath = "/Login/Index";
-//                }
-//            );
+builder.Services.AddAuthentication(
+				CookieAuthenticationDefaults.AuthenticationScheme)
+				.AddCookie(x =>
+				{
+					x.LoginPath = "/Login/Index";
+				}
+			);
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -59,13 +59,13 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 });
 
-//builder.Services.AddAuthorization(options =>
-//{
-//    options.AddPolicy("Admin", policy =>
-//    {
-//        policy.RequireRole("Admin");
-//    });
-//});
+builder.Services.AddAuthorization(options =>
+{
+	options.AddPolicy("Admin", policy =>
+	{
+		policy.RequireRole("Admin");
+	});
+});
 
 var app = builder.Build();
 
