@@ -45,7 +45,6 @@ Hotel Rezervasyon Projesi, ASP.NET Core 6.0 ve Entity Framework Core kullanılar
 4. `dotnet ef database update` komutunu çalıştırarak veritabanı tablolarını oluşturun.
 5. Projeyi çalıştırın ve web uygulamasını tarayıcınızda görüntüleyin.
 
-
 ## RapidAPI ve ApiConsume, API (Application Programming Interface) hizmetlerini kullanmayı kolaylaştıran araçlardır.
 
 RapidAPI, farklı hizmet sağlayıcıların sunduğu API'leri tek bir yerden erişilebilir hale getiren bir platformdur. Bu platform, geliştiricilere geniş bir API koleksiyonuna erişme imkanı sağlar. RapidAPI üzerinden çeşitli kategorilerdeki API'lere erişebilir, bu API'lerin belgelerini ve kullanım kılavuzlarını inceleyebilir ve projelerinizde bu API'leri kullanabilirsiniz. RapidAPI'nin sunduğu avantajlardan biri, API'lere erişmek ve entegrasyonlarınızı yönetmek için tek bir arayüz sağlamasıdır. Böylece farklı API'ler için ayrı ayrı hesaplar oluşturmanıza gerek kalmaz.
