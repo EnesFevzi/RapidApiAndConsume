@@ -17,6 +17,9 @@ Hotel Reservation Website
 
 ![image](https://github.com/EnesFevzi/RapidApiAndConsume/assets/118919666/e81b7102-28b1-46f2-9a1f-ecc27f13621b)
 
+![image](https://github.com/EnesFevzi/RapidApiAndConsume/assets/118919666/042a6844-19e5-47e6-9376-8ad76527e434)
+
+
 # Hotel Rezervasyon Projesi
 
 Hotel Rezervasyon Projesi, ASP.NET Core 6.0 ve Entity Framework Core kullanılarak geliştirilmiş bir web uygulamasıdır. Bu proje, kullanıcı dostu bir arayüz ve güçlü veri yönetimi ile otel rezervasyon deneyimini iyileştirmeyi hedefler.
